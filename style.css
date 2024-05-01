@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+li{
+  list-style-type: none;
+}
+body{
+  background-color: #fff9ec;
+}

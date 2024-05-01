@@ -1,0 +1,138 @@
+.headerinfo-Container{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background-color: #fff9ec;
+    box-shadow: 0px 0px 1px 2px rgb(164, 109, 109);
+    width: 100%;
+}
+.nav-headerContainer{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.left{
+    text-align: center;
+    width: 5%;
+    padding: 8px 20px;
+}
+.middle{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    padding: 8px 20px;
+}
+.middle li{
+    padding: 0 10px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+}
+a{
+   text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #FF651C;
+}
+.right-btn{
+    background: #FF651C;
+    border-color: #FF651C;
+    color: #fff;
+    box-shadow: 6px 6px 0 -1px #373737;
+    cursor: pointer;
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease all 0.35s;
+    display: inline-block;
+}
+.right-btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 6px 6px 0 -1px #FF651C;
+}
+#menu-icon{
+    display: none;
+}
+
+@media(max-width:400px){
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .headerinfo-Container{
+        width: 94%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff9ec;
+        box-shadow: 0px 0px 0px 0px rgb(164, 109, 109);
+    }
+    .nav-headerContainer{
+        border: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0px;
+    }
+    #menu-icon{
+        display: block;
+      margin: 5px;
+    }
+    .left{
+        width: 60%;
+        /* border: solid; */
+        margin-left: -50px;
+        padding: 8px 20px;
+    }
+    .middle{
+        display: none;
+        position: absolute;
+        top: 52px;
+        width: 88%;
+        left: 0px;
+        right: 0px;
+        cursor: pointer;
+        padding: 5%;
+        height: auto;
+        padding-top: 10%;
+        color: white;
+        z-index: 1000;
+        background-color:#fff;
+        scroll-behavior: smooth;
+    }
+    .middle li{
+        width: 100%;
+        line-height: 35px;
+        border-bottom: solid 1px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: wheat;
+        letter-spacing: 3px;
+        font-family: sans-serif;
+    }
+    #menu-icon:focus-within + .middle{
+        display: block;
+     }
+    .right{
+        display: none;
+    }
+    #app{
+        width: 100%;
+    }
+}

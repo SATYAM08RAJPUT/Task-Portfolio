@@ -1,0 +1,156 @@
+#contactid{
+    background-color: #373737;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer-grid img{
+    width: 70%;
+}
+.footer-grid h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+.footer-grid p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footerinfo{
+    padding: 50px;
+}
+form{
+    background-color: #ffff;
+    font-family: sans-serif;
+    padding: 30px;
+
+}
+input{
+    width: 400px;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 380px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.messages{
+    background: #FEC448;
+    border-color: #FEC448;
+    color: #373737;
+    box-shadow: 5px 5px 0 -2px #FF651C;
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: ease all 0.35s;
+    display: inline-block;
+}
+.footer-grid h5{
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.footer-grid p{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: -50px;
+}
+.phoneinfo .fa{
+    padding: 13px;
+    background-color: aqua;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.emailinfo .fa{
+    padding: 18px;
+   background-color: #FEC448;
+    margin-top: 20px;
+    font-size: 28px;
+}
+.addresssinfo .fa{
+    padding: 18px;
+    background-color:#feccb5;
+    margin-top: 20px;
+    font-size: 36px;
+}
+.socila-media{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: sans-serif;
+    border-top: solid 1px rgb(113, 107, 107);
+    padding: 20px;
+}
+.left-media{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+@media(max-width:400px){
+    #contactid{
+        width: 100%;
+    }
+    .footer-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 250px;
+        padding: 8px;
+        margin-top: 16px;
+        margin-bottom: 15px;
+    }
+    textarea{
+        width: 250px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .footerinfo{
+        padding: 20px;
+    }
+    .footer-grid img{
+        width: 100%;
+    }
+    .socila-media{
+        display: flex;
+        color: white;
+        flex-direction: column;
+        font-family: sans-serif;
+        text-align: center;
+        border-top: solid 1px rgb(113, 107, 107);
+        padding: 20px;
+        line-height: 30px;
+    }
+    .left-media{
+        display: flex;
+        text-align: center;
+        width: 50%;
+        margin-left: 80px;
+        /* justify-content: space-between; */
+    }
+    .phone{
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: -60px;
+    }
+}
