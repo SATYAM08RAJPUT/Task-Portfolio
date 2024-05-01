@@ -185,7 +185,7 @@
     }
     .skill-grid{
         display: flex;
-        margin-left: -15px;
+        margin-left: -12px;
         flex-direction: column;
     }
     .skillinfo img{
